@@ -64,12 +64,12 @@ async def send_start(client: Client, message: Message):
         InlineKeyboardButton("❣️ Developer", url = "https://t.me/me_miss_you")
     ],[
         InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/tpn_chatroom'),
-        InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Ajeet_bots')
+        InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/ajeet_bots')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
         chat_id=message.chat.id, 
-        text=f"<b>👋 Hi {message.from_user.mention}, I am Save Restricted Content Bot, I can send you restricted content by its post link.\n\nFor downloading restricted content /login first.\n\nKnow how to use bot by - /help \nFor more visit:- @Ajeet_bots</b>", 
+        text=f"<b>👋 Hi {message.from_user.mention}, I am Save Restricted Content Bot, I can send you restricted content by its post link.\n\nFor downloading restricted content /login first.\n\nKnow how to use bot by - /help</b>", 
         reply_markup=reply_markup, 
         reply_to_message_id=message.id
     )
